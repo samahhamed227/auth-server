@@ -1,0 +1,37 @@
+{
+  "name": "auth-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samahhamed227/auth-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samahhamed227/auth-server/issues"
+  },
+  "homepage": "https://github.com/samahhamed227/auth-server#readme",
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "bcrypt": "^5.0.1",
+    "ci": "^2.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest": "^27.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1",
+    "sequelize": "^6.9.0",
+    "sequelize-cli": "^6.3.0",
+    "sqlite3": "^5.0.2"
+  }
+}
