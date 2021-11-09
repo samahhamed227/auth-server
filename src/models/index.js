@@ -4,14 +4,15 @@ const userModel = require('./users.js');
 const clothesModel = require('./clothes/model.js');
 const foodModel = require('./food/model.js');
 const Collection = require('./data-collection.js');
-
-
 const { Sequelize, DataTypes } = require('sequelize');
 const DATABASE_URL = process.env.DATABASE_URL || 'sqlite:memory:';
-const sequelize = new Sequelize(DATABASE_URL);
+
+
 const food = foodModel(sequelize, DataTypes);
 const clothes = clothesModel(sequelize, DataTypes);
-const DATABASE_CONFIG = process.env.NODE_ENV === 'production' ?  {dialectOptions: {ssl: {require: true, rejectUnauthorized: false}}}: {}
+const DATABASE_CONFIG = process.env.NODE_ENV === 'production' ?  {dialectOptions: {
+  ssl: {require: true, rejectUnauthorized: false
+  }}}: {}
 const sequelize = new Sequelize(DATABASE_URL, DATABASE_CONFIG);
 module.exports = {
   db: sequelize,
